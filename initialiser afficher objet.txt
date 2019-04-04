@@ -1,0 +1,38 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
+
+int main()+3
+
+{
+int done=0; 
+   SDL_Surface *screen = NULL;
+    SDL_Surface *pos1=NULL,*pos2=NULL,*background=NULL;
+    SDL_Rect positionpos1,positionpos2,positionscreen;
+SDL_Event e;    
+    
+    SDL_Init(SDL_INIT_VIDEO);
+    screen = SDL_SetVideoMode(800, 800, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
+    pos1=  IMG_Load("marou.png");
+    pos2 = IMG_Load("marou2.png");
+    background = SDL_LoadBMP("exemple_map.bmp");
+SDL_BlitSurface(background,NULL,screen,&positionscreen);
+SDL_Flip(screen);
+while(!done)
+{
+switch(e.type)
+{
+case SDL_QUIT;
+{
+done=1;
+break;
+}
+}
+SDL_BlitSurface(ph1,NULL,screen,&positionpos1);
+SDL_Flip(screen);
+SDL_BlitSurface(ph2,NULL,screen,&positionpos2);
+SDL_Flip(screen);*
+}
+SDL_QUIT();
+}
