@@ -1,0 +1,6 @@
+#ifndef FONCTION_INCLUDED
+#define FONCTION_INCLUDED
+
+int Enigme2 ();
+
+#endif // FONCTION_INCLUDED
